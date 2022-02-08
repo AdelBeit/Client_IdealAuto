@@ -3,8 +3,8 @@ This Repo houses all project assets and info
 Requirements and design research: 
 
 Sample Sites:
-https://r1motorcycle.business.site/#posts
-https://upcars-garage.co.uk/
+- https://r1motorcycle.business.site/#posts
+- https://upcars-garage.co.uk/
 
 The website needs to:
 - be fast, local business so servers need to be local to the state
