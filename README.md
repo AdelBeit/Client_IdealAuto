@@ -7,6 +7,7 @@ Sample Sites:
 - https://upcars-garage.co.uk/
 
 The website needs to:
+- design needs to be PHONE FIRST, customers are browsing the website on their phones most of the time
 - be fast, local business so servers need to be local to the state
 - customers go to the website for 4 reasons:
 - - find the business location
