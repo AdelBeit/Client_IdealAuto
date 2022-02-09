@@ -44,3 +44,6 @@ Service:
 - Jarl, 28yo male, needs checkup before trip
 - Jack, 40yo male, car broke down, needs to get to shop
 
+
+Notes:
+- Find ways to incentivize reviews, need to get people to leave more reviews
