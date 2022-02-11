@@ -6,6 +6,10 @@ Sample Sites:
 - https://r1motorcycle.business.site/#posts
 - https://upcars-garage.co.uk/
 
+
+figma link: https://www.figma.com/file/CELhcjeNZWoYFmCoccHRNh/Ideal-Auto?node-id=0%3A1
+
+
 The website needs to:
 - design needs to be PHONE FIRST, customers are browsing the website on their phones most of the time
 - be fast, local business so servers need to be local to the state
