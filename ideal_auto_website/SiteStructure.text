@@ -1,0 +1,29 @@
+Homepage
++
+|
++ --- Nav Bar
++  +  --- Menu: # Slide-In Menu
++  +  --- Logo
+|
++  #  Slide-In Menu
++  #  +  --- Button: About Us
++  #  +  --- Button: Reviews
++  #  +  --- Button: Contact Us
++  #  +  --- Button: Location
++  #  +  --- Button: Hours
++  #  +  --- Button: Gallery
+|
++ --- Hero
++ --- About
++ --- Reviews
+|
++ --- Visit Us
++  +  --- Map
++  +  --- Contact
++  +  --- Address
++  +  --- Hours
+|
++ --- Gallery
++  +  --- Card: Car
+|
++ --- Floating Buttons

@@ -4,7 +4,7 @@ import "./App.module.css";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import { Testimonials, TestimonialCard } from "./components/Testimonials";
+import { Reviews, ReviewCard } from "./components/Reviews";
 import VisitUs from "./components/VisitUs";
 import { Gallery, CarCard } from "./components/Gallery";
 import FloatingButtons from "./components/FloatingButtons";
@@ -34,11 +34,11 @@ function App() {
       <NavBar />
       <Hero />
       <About />
-      <Testimonials>
+      <Reviews>
         {reviews.map((review) => (
-          <TestimonialCard key={review.name + review.date} {...review} />
+          <ReviewCard key={review.name + review.date} {...review} />
         ))}
-      </Testimonials>
+      </Reviews>
       <VisitUs />
       <Gallery>
         {cars.map((car) => (

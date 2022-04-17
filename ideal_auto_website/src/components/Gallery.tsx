@@ -1,13 +1,5 @@
 import React from "react";
-
-type Car = {
-  make: string;
-  model: string;
-  year: string;
-  miles: string;
-  price: string;
-  image?: string;
-};
+import { Car } from "../types/types";
 
 interface GalleryProps {
   children: JSX.Element | JSX.Element[];
