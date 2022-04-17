@@ -1,17 +1,19 @@
 import React from "react";
+import { useSite } from "../hooks/use_site_context";
 
 export default function About() {
+  const site = useSite()
+  const sectionName = site.sectionTitles.about;
+  const description = site.about;
+
   return (
-    <>
-      <h1>About</h1>
+    <div id="section__about">
+      <h1>{sectionName}</h1>
       <div className="about__body">
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          {description}
         </p>
       </div>
-    </>
+    </div>
   );
 }

@@ -17,7 +17,7 @@ export default function VisitUs(props) {
     </p>
   ));
   return (
-    <>
+    <div id="section__visit-us">
       <h1>Visit Us</h1>
       <div className="visit-us__map__container">
         <div className="visit-us__map">
@@ -42,6 +42,6 @@ export default function VisitUs(props) {
       <div>
         <div className="visit-us__hours">{hours}</div>
       </div>
-    </>
+    </div>
   );
 }

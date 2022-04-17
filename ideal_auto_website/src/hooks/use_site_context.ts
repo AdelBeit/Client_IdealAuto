@@ -3,9 +3,9 @@ import { Site } from "../types/types";
 
 type UserAgent = { userAgent: "mobile" | "desktop" };
 
-type SiteContext = Site & UserAgent;
+export type SiteContextType = Site & UserAgent;
 
-export const SiteContext = createContext<SiteContext | undefined>(undefined);
+export const SiteContext = createContext<SiteContextType | undefined>(undefined);
 
 export const useSite = () => {
   const site = useContext(SiteContext);

@@ -8,8 +8,15 @@ import { Reviews, ReviewCard } from "./components/Reviews";
 import VisitUs from "./components/VisitUs";
 import { Gallery, CarCard } from "./components/Gallery";
 import FloatingButtons from "./components/FloatingButtons";
+import {SiteContext, SiteContextType} from "./hooks/use_site_context";
 
-function App() {
+function Abc(){
+  return <SiteContext.Provider value={''}>
+    <foobar />
+  </SiteContext.Provider>
+}
+
+function App( { a } : {a : SiteContextType}) {
   const reviews = [
     {
       rating: "4.5",
@@ -29,8 +36,9 @@ function App() {
     },
   ];
 
+
   return (
-    <>
+    <SiteContext.Provider value={a}>
       <NavBar />
       <Hero />
       <About />
@@ -49,7 +57,7 @@ function App() {
         ))}
       </Gallery>
       <FloatingButtons />
-    </>
+    </SiteContext.Provider>
   );
 }
 

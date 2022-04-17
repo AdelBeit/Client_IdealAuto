@@ -7,10 +7,10 @@ interface GalleryProps {
 
 function Gallery({ children }: GalleryProps) {
   return (
-    <>
+    <div id="section__gallery">
       <h1>Gallery</h1>
       <div className="gallery__cars__container">{children}</div>
-    </>
+    </div>
   );
 }
 
