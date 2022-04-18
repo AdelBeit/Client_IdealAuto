@@ -1,22 +1,27 @@
 import React from "react";
 import { Review } from "../types/types";
+import {useSite} from "./../hooks/use_site_context";
 
-interface ReviewProps {
-  children: JSX.Element | JSX.Element[];
-}
 
-function Reviews({ children }: ReviewProps) {
+function Reviews() {
+  const reviews = useSite().reviews;
+
   return (
     <div id="section__reviews">
-      <div className="reviews__container">{children}</div>
+      <h1>Reviews</h1>
+      <div className="reviews__container">
+        {reviews.map((review) => (
+          <ReviewCard key={review.name + review.date} {...review} />
+        ))}
+        </div>
     </div>
   );
 }
 
+
 function ReviewCard(review: Review) {
   return (
     <div className="section__review-card">
-      <h1>Reviews</h1>
       <div className="review-card__header">
         <div className="review-card__rating">{review.rating}</div>
 

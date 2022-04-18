@@ -3,11 +3,11 @@ import { Site } from "../types/types";
 
 type UserAgent = { userAgent: "mobile" | "desktop" };
 
-export type SiteContextType = Site & UserAgent;
+type SiteContextType = Site & UserAgent;
 
-export const SiteContext = createContext<SiteContextType | undefined>(undefined);
+const SiteContext = createContext<SiteContextType | undefined>(undefined);
 
-export const useSite = () => {
+function useSite() {
   const site = useContext(SiteContext);
 
   if (!site) {
@@ -21,3 +21,7 @@ export const useSite = () => {
 
   return site;
 };
+
+
+export type {SiteContextType};
+export { SiteContext, useSite};

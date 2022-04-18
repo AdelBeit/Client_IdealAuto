@@ -24,5 +24,5 @@ export interface Site {
   contact: Record<string, string>;
   address: Record<string, string>;
   hours: Record<string, string>;
-  Gallery: Car[];
+  cars: Car[];
 }

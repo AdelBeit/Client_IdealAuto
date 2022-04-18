@@ -1,15 +1,21 @@
 import React from "react";
+import { useSite } from "../hooks/use_site_context";
 import { Car } from "../types/types";
 
-interface GalleryProps {
-  children: JSX.Element | JSX.Element[];
-}
-
-function Gallery({ children }: GalleryProps) {
+function Gallery() {
+  const cars = useSite().cars;
+  
   return (
     <div id="section__gallery">
       <h1>Gallery</h1>
-      <div className="gallery__cars__container">{children}</div>
+      <div className="gallery__cars__container">
+      {cars.map((car) => (
+          <CarCard
+            key={car.miles + car.model + car.make + car.price}
+            {...car}
+          />
+        ))}
+      </div>
     </div>
   );
 }

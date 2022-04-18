@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function VisitUs(props) {
+export default function VisitUs() {
   let hours = [
     ["Monday", "8:30am - 5:00pm"],
     ["Tuesday", "8:30am - 5:00pm"],

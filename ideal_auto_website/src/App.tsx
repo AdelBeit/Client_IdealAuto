@@ -4,58 +4,48 @@ import "./App.module.css";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import { Reviews, ReviewCard } from "./components/Reviews";
+import { Reviews } from "./components/Reviews";
 import VisitUs from "./components/VisitUs";
-import { Gallery, CarCard } from "./components/Gallery";
+import { Gallery } from "./components/Gallery";
 import FloatingButtons from "./components/FloatingButtons";
-import {SiteContext, SiteContextType} from "./hooks/use_site_context";
+import {SiteContext} from "./hooks/use_site_context";
+import {SiteData} from "./data";
 
-function Abc(){
-  return <SiteContext.Provider value={''}>
-    <foobar />
-  </SiteContext.Provider>
-}
+// function Abc(){
+//   return <SiteContext.Provider value={''}>
+//     <foobar />
+//   </SiteContext.Provider>
+// }
+// const reviews = [
+//     {
+//       rating: "4.5",
+//       date: "12/2/22",
+//       body: "great mechanic",
+//       name: "Andrew Garfield",
+//     },
+//   ];
 
-function App( { a } : {a : SiteContextType}) {
-  const reviews = [
-    {
-      rating: "4.5",
-      date: "12/2/22",
-      body: "great mechanic",
-      name: "Andrew Garfield",
-    },
-  ];
-
-  const cars = [
-    {
-      make: "Tesla",
-      model: "Model 3",
-      year: "2020",
-      miles: "5",
-      price: "47998",
-    },
-  ];
-
-
+//   const cars = [
+//     {
+//       make: "Tesla",
+//       model: "Model 3",
+//       year: "2020",
+//       miles: "5",
+//       price: "47998",
+//     },
+//   ];
+function App() {
+  
   return (
-    <SiteContext.Provider value={a}>
+    // why cant i do this instead?
+    <SiteContext.Provider value={{...SiteData, userAgent: "desktop"}}>
+    {/* <SiteContext.Provider value={a}> */}
       <NavBar />
       <Hero />
       <About />
-      <Reviews>
-        {reviews.map((review) => (
-          <ReviewCard key={review.name + review.date} {...review} />
-        ))}
-      </Reviews>
+      <Reviews />
       <VisitUs />
-      <Gallery>
-        {cars.map((car) => (
-          <CarCard
-            key={car.miles + car.model + car.make + car.price}
-            {...car}
-          />
-        ))}
-      </Gallery>
+      <Gallery />
       <FloatingButtons />
     </SiteContext.Provider>
   );

@@ -46,7 +46,7 @@ export const SiteData: Types.Site = {
     Sat: "10:00am - 2:00pm",
     Sun: "Closed",
   },
-  Gallery: [
+  cars: [
     {
       make: "Tesla",
       model: "Model 3",

@@ -2,13 +2,11 @@ import React from "react";
 import { useSite } from "../hooks/use_site_context";
 
 export default function About() {
-  const site = useSite()
-  const sectionName = site.sectionTitles.about;
-  const description = site.about;
+  const description = useSite().about;
 
   return (
     <div id="section__about">
-      <h1>{sectionName}</h1>
+      <h1>About</h1>
       <div className="about__body">
         <p>
           {description}
