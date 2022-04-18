@@ -11,6 +11,7 @@ export const SiteData: Types.Site = {
   },
   logoPath: "./public/images/",
   heroImagePath: "./public/images/",
+  menuButtonPath: "./public/images/menu_button.svg",
   about: "ideal auto is a good auto repair shop",
   reviews: [
     {
@@ -41,11 +42,7 @@ export const SiteData: Types.Site = {
     city: "Seattle, WA",
     zipcode: "98117",
   },
-  hours: {
-    MonFri: "8:30am - 5:00pm",
-    Sat: "10:00am - 2:00pm",
-    Sun: "Closed",
-  },
+  hours: ["Mon - Fri: 8:30am - 5:00pm", "Sat: 10:00am - 2:00pm", "Sun: Closed"],
   cars: [
     {
       make: "Tesla",

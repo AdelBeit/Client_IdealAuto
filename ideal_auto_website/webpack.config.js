@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: "./src/pages/index.tsx",
   module: {
     rules: [
       {

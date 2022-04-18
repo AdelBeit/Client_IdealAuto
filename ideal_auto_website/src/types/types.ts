@@ -19,10 +19,11 @@ export interface Site {
   sectionTitles: Record<string, string>;
   logoPath: string;
   heroImagePath: string;
+  menuButtonPath: string;
   about: string;
   reviews: Review[];
   contact: Record<string, string>;
   address: Record<string, string>;
-  hours: Record<string, string>;
+  hours: string[];
   cars: Car[];
 }

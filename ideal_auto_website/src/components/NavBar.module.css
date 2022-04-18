@@ -1,0 +1,11 @@
+#section__nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: red;
+}
+.navbar__menu-button {
+}
+
+.navbar__logo {
+}

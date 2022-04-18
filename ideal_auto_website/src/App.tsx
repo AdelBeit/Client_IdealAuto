@@ -8,8 +8,8 @@ import { Reviews } from "./components/Reviews";
 import VisitUs from "./components/VisitUs";
 import { Gallery } from "./components/Gallery";
 import FloatingButtons from "./components/FloatingButtons";
-import {SiteContext} from "./hooks/use_site_context";
-import {SiteData} from "./data";
+import { SiteContext } from "./hooks/use_site_context";
+import { SiteData } from "./data";
 
 // function Abc(){
 //   return <SiteContext.Provider value={''}>
@@ -35,11 +35,8 @@ import {SiteData} from "./data";
 //     },
 //   ];
 function App() {
-  
   return (
-    // why cant i do this instead?
-    <SiteContext.Provider value={{...SiteData, userAgent: "desktop"}}>
-    {/* <SiteContext.Provider value={a}> */}
+    <SiteContext.Provider value={{ ...SiteData, userAgent: "desktop" }}>
       <NavBar />
       <Hero />
       <About />

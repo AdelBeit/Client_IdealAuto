@@ -1,21 +1,11 @@
 import React from "react";
+import { useSite } from "../hooks/use_site_context";
 
 export default function VisitUs() {
-  let hours = [
-    ["Monday", "8:30am - 5:00pm"],
-    ["Tuesday", "8:30am - 5:00pm"],
-    ["Wednesday", "8:30am - 5:00pm"],
-    ["Thursday", "8:30am - 5:00pm"],
-    ["Friday", "8:30am - 5:00pm"],
-    ["Saturday", "10:00am - 2:00pm"],
-    ["Sunday", "Closed"],
-  ];
-  hours = props.hours || hours;
-  hours = hours.map((day, index) => (
-    <p key={index}>
-      {day[0].slice(0, 3)}: {day[1]}
-    </p>
-  ));
+  const hours = useSite().hours;
+  const address = useSite().address;
+  const contact = useSite().contact;
+
   return (
     <div id="section__visit-us">
       <h1>Visit Us</h1>
@@ -27,20 +17,24 @@ export default function VisitUs() {
       <div>
         <div className="visit-us__contact">
           <h3>Contact</h3>
-          <p>888 - 111 - 2222</p>
-          <p>email@domain.com</p>
+          <p>{contact.number}</p>
+          <p>{contact.email}</p>
         </div>
       </div>
       <div>
         <div className="visit-us__address">
           <h3>Address</h3>
-          <p>123 West ST Road</p>
-          <p>Seattle, WA</p>
-          <p>11223</p>
+          <p>{address.street}</p>
+          <p>{address.city}</p>
+          <p>{address.zipcode}</p>
         </div>
       </div>
       <div>
-        <div className="visit-us__hours">{hours}</div>
+        <div className="visit-us__hours">
+          {hours.map((hour) => (
+            <p key={hour[0] + hour[-1] + hour}>{hour}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
