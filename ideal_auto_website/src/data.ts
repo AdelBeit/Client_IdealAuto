@@ -9,9 +9,10 @@ export const SiteData: Types.Site = {
     hours: "Hours",
     gallery: "Gallery",
   },
-  logoPath: "./public/images/",
-  heroImagePath: "./public/images/",
-  menuButtonPath: "./public/images/menu_button.svg",
+  logoPath: "./images/img.jpg",
+  heroImagePath: "./images/img.jpg",
+  menuButtonPath: "./images/menu_button.svg",
+  // menuButtonPath: "./images/img.jpg",
   about: "ideal auto is a good auto repair shop",
   reviews: [
     {

@@ -3,14 +3,13 @@
     <path id="arrow" d="
     M 15 10
     Q 40 25 15 40
-    " 
-    fill="none" stroke-linecap="round" 
-    stroke="black" stroke-width="1" 
-    />
-    
+    " fill="none" stroke-linecap="round" stroke="red" stroke-width="1" />
+    <!-- transform="scale(-1,1) translate(-40,0)"  -->
+
     <!-- <animate id="open" href="#arrow" attributeName="transorm" values="7;21" dur="1s" repeatCount="indefinite"/> -->
-    <animate id="open" href="#arrow" attributeName="transform" values="scale(1,1);scale(-1,1);scale(1,1)" dur="2s" repeatCount="indefinite" />
+    <!-- <animate id="open" href="#arrow" attributeName="transform" values="scale(1,1);scale(-1,1);scale(1,1)" dur="2s" -->
+    <!-- repeatCount="indefinite" /> -->
     <!-- <animate id="close" href="#arrow" attributeName="transform" values="translate(0,0);translate(-40,0);translate(0,0)" dur="1s" repeatCount="indefinite" /> -->
     <!-- <animate attributeName="transform" values="scale(1,1) translate(0,0);scale(-1,1) translate(-40,0);scale(1,1) translate(0,0)" dur="3s" repeatCount="indefinite" /> -->
-    
+
 </svg>

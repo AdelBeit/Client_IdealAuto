@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: red;
+  padding-inline: var(--margin);
+  overflow-y: hidden;
+  height: var(--nav-height);
 }
 .navbar__menu-button {
+
 }
 
 .navbar__logo {
+  
 }
