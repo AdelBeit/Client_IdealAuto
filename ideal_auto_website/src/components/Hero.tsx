@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <div id="section__hero">
-      <div className="hero__title">Ideal Auto</div>
+    <div className={styles["section__hero"]}>
+      <span className={styles["hero__title"]}>Ideal Auto</span>
     </div>
   );
 }

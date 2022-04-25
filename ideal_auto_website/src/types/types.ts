@@ -4,6 +4,7 @@ export type Review = {
   body: string;
   name: string;
   image?: string;
+  url: string;
 };
 
 export type Car = {
@@ -17,9 +18,7 @@ export type Car = {
 
 export interface Site {
   sectionTitles: Record<string, string>;
-  logoPath: string;
-  heroImagePath: string;
-  menuButtonPath: string;
+  imagePaths: Record<string, string>;
   about: string;
   reviews: Review[];
   contact: Record<string, string>;

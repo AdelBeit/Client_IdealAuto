@@ -1,17 +1,21 @@
-#section__nav-bar {
+.section__nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: red;
-  padding-inline: var(--margin);
+  padding-inline: var(--padding);
   overflow-y: hidden;
   height: var(--nav-height);
 }
-.navbar__menu-button {
 
+.navbar__images {
+  width: auto;
+  height: 20px;
+}
+
+.navbar__menu-button {
 }
 
 .navbar__logo {
-  
 }

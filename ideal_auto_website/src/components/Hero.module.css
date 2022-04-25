@@ -1,0 +1,12 @@
+.section__hero {
+  min-height: var(--hero-height);
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title {
+  font-size: 3em;
+}

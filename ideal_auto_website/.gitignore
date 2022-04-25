@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/ideal_auto_website/node_modules
+/ideal_auto_website/node_modules/
 /ideal_auto_website/.next/
 /.next/
 /.pnp

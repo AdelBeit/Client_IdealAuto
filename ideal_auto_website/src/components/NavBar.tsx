@@ -3,17 +3,16 @@ import { useSite } from "../hooks/use_site_context";
 import styles from "./NavBar.module.css";
 
 export default function NavBar() {
-  const {menuButtonPath, logoPath} = useSite();
-  console.log(logoPath, 'path logo')
+  const { menuButton, logo } = useSite().imagePaths;
 
   return (
-    <header id={styles["section__nav-bar"]}>
+    <nav className={styles["section__nav-bar"]}>
       <button className={styles["navbar__menu-button"]}>
-        <img alt="" height="50px" width="50px" src={menuButtonPath} />
+        <img className={styles["navbar__images"]} alt="" src={menuButton} />
       </button>
       <button className={styles["navbar__logo"]}>
-        <img alt="" height="50px" width="50px" src={logoPath} />
+        <img className={styles["navbar__images"]} alt="" src={logo} />
       </button>
-    </header>
+    </nav>
   );
 }

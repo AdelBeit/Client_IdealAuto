@@ -4,12 +4,12 @@ import { Car } from "../types/types";
 
 function Gallery() {
   const cars = useSite().cars;
-  
+
   return (
-    <div id="section__gallery">
+    <div className="section__gallery">
       <h1>Gallery</h1>
       <div className="gallery__cars__container">
-      {cars.map((car) => (
+        {cars.map((car) => (
           <CarCard
             key={car.miles + car.model + car.make + car.price}
             {...car}
