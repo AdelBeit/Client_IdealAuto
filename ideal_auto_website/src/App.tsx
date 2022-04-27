@@ -5,7 +5,6 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import { Reviews } from "./components/Reviews";
-import VisitUs from "./components/VisitUs";
 import { Gallery } from "./components/Gallery";
 import FloatingButtons from "./components/FloatingButtons";
 import { SiteContext } from "./hooks/use_site_context";
@@ -19,7 +18,6 @@ function App() {
         <Hero />
         <About />
         <Reviews />
-        <VisitUs />
         <Gallery />
         <FloatingButtons />
       </div>

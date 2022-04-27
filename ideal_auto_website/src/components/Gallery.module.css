@@ -1,0 +1,65 @@
+.section__gallery {
+  grid-area: gallery;
+}
+
+.gallery-card__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--card-gap);
+}
+
+.section__gallery-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 5px;
+  margin: 25px 5px 0 5px;
+  padding: 10px;
+  inline-size: min-content;
+  min-width: var(--card-width);
+  flex-grow: 1;
+  flex-basis: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.car__picture {
+  flex-basis: 80%;
+  min-height: 220px;
+}
+
+.car__picture img {
+  min-height: inherit;
+}
+
+.car__info {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: var(--font-size-small);
+}
+
+.car__info span {
+  margin: 2px 0;
+  display: block;
+}
+
+.car__name {
+  flex-basis: 100%;
+}
+
+.car__miles {
+  flex-basis: 40%;
+  white-space: nowrap;
+}
+
+.car__price {
+  text-align: right;
+  font-weight: bold;
+  flex-basis: 40%;
+}

@@ -1,8 +1,24 @@
 :root {
   --padding: 15px;
-  --nav-height: 40px;
-  --hero-height: 300px;
-  --body-width: 800px;
+
+  --nav-height: 80px;
+
+  --hero-height: 600px;
+
+  --grid-row-gap: 35px;
+  --grid-template-columns: 1fr 8fr 1fr;
+  --grid-template-areas: "nav nav nav" "hero hero hero" ". about ."
+    ". reviews ." ". gallery .";
+  --map-height: 600px;
+
+  --font-size-xlarge: 34px;
+  --font-size-large: 28px;
+  --font-size-medium: 20px;
+  --font-size-small: 16px;
+  --font-size-xsmall: 14px;
+
+  --card-width: 200px;
+  --card-gap: 20px;
 }
 
 /* mobile */
@@ -11,5 +27,6 @@
   :root {
     --padding: 20px;
     --nav-height: 0px;
+    --map-height: 450px;
   }
 }

@@ -3,10 +3,26 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
+  background-color: white;
   padding-inline: var(--padding);
   overflow-y: hidden;
   height: var(--nav-height);
+  grid-area: nav;
+}
+
+.nav-bar__button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.section__nav-bar h1 {
+  font-size: var(--font-size-xlarge);
+}
+
+.section__nav-bar button {
+  background-color: transparent;
+  border: none;
 }
 
 .navbar__images {

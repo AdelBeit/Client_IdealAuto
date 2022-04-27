@@ -1,16 +1,17 @@
 import React from "react";
 import { useSite } from "../hooks/use_site_context";
 import { Car } from "../types/types";
+import styles from "./Gallery.module.css";
 
 function Gallery() {
   const cars = useSite().cars;
 
   return (
-    <div className="section__gallery">
+    <div className={styles["section__gallery"]}>
       <h1>Gallery</h1>
-      <div className="gallery__cars__container">
+      <div className={styles["gallery-card__container"]}>
         {cars.map((car) => (
-          <CarCard
+          <GalleryCard
             key={car.miles + car.model + car.make + car.price}
             {...car}
           />
@@ -20,23 +21,32 @@ function Gallery() {
   );
 }
 
-function CarCard(car: Car) {
+function GalleryCard(car: Car) {
   // TODO: need to pass picture url in props later
+  const addComma = (str: string) => {
+    return (
+      str.substring(0, str.length - 3) +
+      "," +
+      str.substring(str.length, str.length - 3)
+    );
+  };
+  const miles = addComma(car.miles);
+  const price = addComma(car.price);
+
   return (
-    <>
-      <div className="car-card__picture">
+    <div className={styles["section__gallery-card"]}>
+      <div className={styles["car__picture"]}>
         <img alt="" src="http://placekitten.com/20/40" />
       </div>
-      <div className="car-card__info">
-        <p>
+      <div className={styles["car__info"]}>
+        <span className={styles["car__name"]}>
           {car.year} {car.make} {car.model}
-        </p>
-        <p>
-          ${car.price} - {car.miles}K mi
-        </p>
+        </span>
+        <span className={styles["car__miles"]}>{miles} mi</span>
+        <span className={styles["car__price"]}>${price}</span>
       </div>
-    </>
+    </div>
   );
 }
 
-export { Gallery, CarCard };
+export { Gallery, GalleryCard };
