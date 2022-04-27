@@ -1,13 +1,7 @@
 .container__app {
   display: grid;
-  grid-template: 1 auto 1;
-  background-color: red;
-}
-
-.container__app > * {
-}
-
-.container__app > div {
-  display: grid;
-  place-items: center;
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-rows: auto;
+  grid-template-areas: var(--grid-template-areas);
+  margin-bottom: 20px;
 }
