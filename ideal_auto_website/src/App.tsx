@@ -8,17 +8,20 @@ import { Reviews } from "./components/Reviews";
 import { Gallery } from "./components/Gallery";
 import { SiteContext } from "./hooks/use_site_context";
 import { SiteData } from "./data";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <SiteContext.Provider value={{ ...SiteData, userAgent: "desktop" }}>
-      <div className={styles["container__app"]}>
-        <NavBar />
-        <Hero />
-        <About />
-        <Reviews />
-        <Gallery />
-      </div>
+      <Layout title="Ideal Auto">
+        <div className={styles["container__app"]}>
+          <NavBar />
+          <Hero />
+          <About />
+          <Reviews />
+          <Gallery />
+        </div>
+      </Layout>
     </SiteContext.Provider>
   );
 }
