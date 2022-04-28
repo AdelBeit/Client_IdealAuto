@@ -45,26 +45,29 @@
   height: var(--hero-height);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 625px) {
   .section__visit-us {
     background-color: var(--background-color);
     max-width: inherit;
-    flex-direction: row;
-    flex-wrap: wrap;
     row-gap: 20px;
-    column-gap: 25%;
-    justify-content: left;
-    padding: 0 45px 20px 45px;
+    margin: 0 5%;
+    flex-direction: column;
+    column-gap: 0;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 626px) and (max-width: 768px) {
+  .section__visit-us {
+    background-color: var(--background-color);
+    max-width: inherit;
+    row-gap: 20px;
+    margin: 0 5%;
+    flex-direction: row;
+    column-gap: 10px;
     box-shadow: none;
   }
 
-  .visit-us__hours {
-    flex-basis: 100%;
-  }
-  .visit-us__address,
-  .visit-us__contact {
-    flex-basis: 20%;
-  }
   .visit-us__address span {
     min-width: max-content;
   }

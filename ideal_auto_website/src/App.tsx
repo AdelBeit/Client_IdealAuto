@@ -6,7 +6,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import { Reviews } from "./components/Reviews";
 import { Gallery } from "./components/Gallery";
-import FloatingButtons from "./components/FloatingButtons";
 import { SiteContext } from "./hooks/use_site_context";
 import { SiteData } from "./data";
 
@@ -19,7 +18,6 @@ function App() {
         <About />
         <Reviews />
         <Gallery />
-        <FloatingButtons />
       </div>
     </SiteContext.Provider>
   );
