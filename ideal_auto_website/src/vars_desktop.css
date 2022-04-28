@@ -1,0 +1,47 @@
+:root {
+  --mobile-breakpoint: auto;
+
+  --nav-bar-padding: 25px;
+  --visit-us-padding: 25px;
+
+  --nav-height: 80px;
+
+  --hero-height: 600px;
+  --hero-flex-direction: row;
+
+  --grid-row-gap: 20px;
+  --grid-template-columns: 1fr 6fr 1fr;
+  --grid-template-areas: "nav nav nav" ". about ." "hero hero hero"
+    ". reviews ." ". gallery .";
+
+  --font-color: black;
+
+  --font-size-xlarge: 34px;
+  --font-size-large: 28px;
+  --font-size-medium: 20px;
+  --font-size-small: 16px;
+  --font-size-xsmall: 14px;
+
+  --reviews-flex-direction: row;
+  --card-width: 200px;
+  --card-gap: 20px;
+  --review-card-margin: 25px 5px;
+  --review-card-inline-size: min-content;
+
+  --gallery-visible: none;
+
+  --background-color: white;
+  --background-color-alternative: lightgray;
+  --theme-color: #e14733;
+  --theme-color-light: rgb(225, 86, 51);
+}
+
+/* xlarge */
+@media (min-width: 1280px) {
+  :root {
+    --nav-bar-padding: 25px 40px;
+    --visit-us-padding: 20px 40px;
+
+    --grid-template-columns: 2fr 6fr 2fr;
+  }
+}

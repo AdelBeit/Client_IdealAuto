@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+  :root {
+    --mobile-breakpoint: none;
+
+    --nav-height: 50px;
+
+    --font-size-xlarge: 28px;
+    --font-size-large: 20px;
+    --font-size-medium: 14px;
+    --font-size-small: 12px;
+    --font-size-xsmall: 8px;
+
+    --grid-row-gap: 20px;
+    --grid-template-columns: 1fr 18fr 1fr;
+
+    --hero-height: 400px;
+    --hero-flex-direction: column-reverse;
+
+    --visit-us-padding: 20px 10px;
+    --nav-bar-padding: 15px;
+
+    --reviews-flex-direction: column;
+    --card-width: 250px;
+    --card-gap: 0px;
+    --review-card-margin: 15px 25px;
+    --review-card-inline-size: auto;
+  }
+}

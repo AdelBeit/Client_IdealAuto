@@ -1,6 +1,6 @@
 .section__hero {
   min-height: var(--hero-height);
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--hero-flex-direction);
   grid-area: hero;
 }

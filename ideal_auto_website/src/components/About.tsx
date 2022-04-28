@@ -9,7 +9,7 @@ export default function About() {
     <div className={styles["section__about"]}>
       <h1>About</h1>
       <div className={styles["about__body"]}>
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{ __html: description }}></p>
       </div>
     </div>
   );

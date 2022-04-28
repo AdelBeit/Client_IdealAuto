@@ -3,5 +3,6 @@
   grid-template-columns: var(--grid-template-columns);
   grid-template-rows: auto;
   grid-template-areas: var(--grid-template-areas);
+  row-gap: var(--grid-row-gap);
   margin-bottom: 20px;
 }

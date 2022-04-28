@@ -2,30 +2,31 @@ import React from "react";
 import { useSite } from "../hooks/use_site_context";
 import styles from "./NavBar.module.css";
 
-export default function NavBar() {
-  const { directionsButton, phoneButton, emailButton } = useSite().imagePaths;
+function NavBar() {
+  const { imagePaths, contact } = useSite();
 
   return (
     <nav className={styles["section__nav-bar"]}>
-      {/* <button className={styles["navbar__menu-button"]}>
-        <img className={styles["navbar__images"]} alt="" src={menuButton} />
-      </button> */}
       <h1>Ideal Auto</h1>
       <div className={styles["nav-bar__button-group"]}>
         <button className={styles["nav-bar__directions"]}>
-          <img alt="directions button" src={directionsButton} />
+          <a href="https://maps.google.com/maps/dir//5645+1%2F2+State+Rd+46+Bloomington,+IN+47404/@39.2221276,-86.608603,19z/data=!4m5!4m4!1m0!1m2!1m1!1s0x886c5e4e5337e509:0x7586953049beeab8">
+            <img alt="directions button" src={imagePaths.directionsButton} />
+          </a>
         </button>
         <button className={styles["nav-bar__phone"]}>
-          <img alt="phone button" src={phoneButton} />
+          <a href={"tel:" + contact.number}>
+            <img alt="phone button" src={imagePaths.phoneButton} />
+          </a>
         </button>
         <button className={styles["nav-bar__email"]}>
-          <img alt="email button" src={emailButton} />
+          <a href={"mailto:" + contact.email}>
+            <img alt="email button" src={imagePaths.emailButton} />
+          </a>
         </button>
       </div>
-
-      {/* <button className={styles["navbar__logo"]}>
-        <img className={styles["navbar__images"]} alt="" src={logo} />
-      </button> */}
     </nav>
   );
 }
+
+export { NavBar };

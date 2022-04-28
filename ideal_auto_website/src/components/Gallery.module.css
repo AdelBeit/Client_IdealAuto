@@ -1,5 +1,6 @@
 .section__gallery {
   grid-area: gallery;
+  display: var(--gallery-visible);
 }
 
 .gallery-card__container {
@@ -13,7 +14,6 @@
 .section__gallery-card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  border-radius: 5px;
   margin: 25px 5px 0 5px;
   padding: 10px;
   inline-size: min-content;

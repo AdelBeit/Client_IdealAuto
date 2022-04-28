@@ -1,0 +1,13 @@
+.section__floating-buttons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  bottom: 0px;
+  right: 0px;
+}
+
+.section__floating-buttons button {
+  background-color: transparent;
+  border: none;
+}

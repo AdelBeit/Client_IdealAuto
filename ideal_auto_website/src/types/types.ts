@@ -1,9 +1,7 @@
 export type Review = {
   rating: string;
-  date: string;
   body: string;
   name: string;
-  image?: string;
   url: string;
 };
 

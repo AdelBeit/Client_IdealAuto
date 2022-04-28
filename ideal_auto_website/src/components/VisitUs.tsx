@@ -32,15 +32,19 @@ function VisitUs() {
       </div>
       <div className={styles["visit-us__address"]}>
         <h3>Address</h3>
-        <p style={{ textTransform: "capitalize" }}>{address.street}</p>
         <p style={{ textTransform: "capitalize" }}>
-          {address.city + " " + address.zipcode}
+          <span>{address.street}</span>
+          <span>{address.city + " " + address.zipcode}</span>
         </p>
       </div>
       <div className={styles["visit-us__contact"]}>
         <h3>Contact</h3>
-        <p>{contact.number}</p>
-        <p>{contact.email}</p>
+        <a href={"tel:" + contact.number}>
+          <p>{contact.number}</p>
+        </a>
+        <a href={"mailto:" + contact.email}>
+          <p>{contact.email}</p>
+        </a>
       </div>
     </div>
   );

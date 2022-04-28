@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./App.module.css";
 
-import NavBar from "./components/NavBar";
+import { NavBar } from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import { Reviews } from "./components/Reviews";

@@ -1,4 +1,5 @@
-@import "./vars.css";
+@import "./vars_desktop.css";
+@import "./vars_mobile.css";
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -8,11 +9,11 @@ html {
 
 body {
   margin: 0px;
-  font-size: 14px;
+  font-size: var(--font-size-medium);
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  background-color: var(--bgc-0);
-  font-size: 1.2rem;
+  background-color: var(--background-color);
+  font-size: var(--font-size-medium);
 }
 
 *,
@@ -26,6 +27,6 @@ body {
 
 h1 {
   text-align: center;
-  text-decoration: underline;
   font-weight: 400;
+  font-family: Helvetica;
 }

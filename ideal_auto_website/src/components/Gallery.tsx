@@ -36,7 +36,7 @@ function GalleryCard(car: Car) {
   return (
     <div className={styles["section__gallery-card"]}>
       <div className={styles["car__picture"]}>
-        <img alt="" src="http://placekitten.com/20/40" />
+        <img alt="" src="http://placekitten.com/190/200" />
       </div>
       <div className={styles["car__info"]}>
         <span className={styles["car__name"]}>
