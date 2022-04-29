@@ -39,13 +39,12 @@
 
 @media (max-width: 768px) {
   .section__nav-bar {
-    background-color: var(--theme-color);
+    color: var(--theme-color);
 
     justify-content: center;
     box-shadow: 0 -1px 3px black;
   }
   .section__nav-bar h1 {
-    color: white;
     background-color: transparent;
   }
 
